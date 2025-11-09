@@ -1,0 +1,13 @@
+# Vehicle Traffic Monitor Requirements
+# Python 3.7+
+
+# Core dependencies - tkinter is included with Python
+# No external packages strictly required for basic functionality
+
+# Optional: Enhanced functionality
+# pywin32>=300  # For Windows registry access to enumerate J2534 devices
+# pyserial>=3.5  # For serial communication if needed
+
+# Development dependencies
+# pylint>=2.0
+# black>=22.0
