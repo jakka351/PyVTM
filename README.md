@@ -1,6 +1,10 @@
-# Vehicle Traffic Monitor (VTM) v7.81.6
+# PyVTM
+### Vehicle Traffic Monitor (VTM) Tribute
 
-A Python-based recreation of the Ford Motor Company Vehicle Traffic Monitor tool for CAN bus monitoring, diagnostics, and ECU communication using J2534 Pass-Thru devices.
+A Python-based TKinter recreation of the Ford Motor Company Vehicle Traffic Monitor tool for CAN bus monitoring, diagnostics, and ECU communication using J2534 Pass-Thru devices.
+
+
+<img width="1401" height="852" alt="image" src="https://github.com/user-attachments/assets/44c59328-9ab5-4eb2-8b7e-afa46dcfe60b" />
 
 ## Features
 
@@ -10,6 +14,8 @@ A Python-based recreation of the Ford Motor Company Vehicle Traffic Monitor tool
 - **Real-time Message Display**: Live CAN message capture and display
 - **Message Filtering**: Support for pass filters, block filters, and diagnostic message filtering
 - **Data Logging**: Save captured CAN traffic to log files
+  
+<img width="1207" height="737" alt="image" src="https://github.com/user-attachments/assets/0be8515d-7ebf-463e-ba76-27e06e57c0c9" />
 
 ### Advanced Features
 - **Read/Write Tool**: Password-protected ECU diagnostic interface (password: `cancan`)
@@ -161,8 +167,8 @@ vehicle-traffic-monitor/
 - Ensure correct protocol is selected
 - Verify baud rate matches vehicle network
 
-### "Incorrect password"
-- Read/Write password is: `cancan` (case-sensitive)
+### Password
+- Read/Write password is: `cancan`, staying true to the original.
 
 ### No messages displayed
 - Verify Start button has been clicked
@@ -199,36 +205,15 @@ Response: 62 D1 00 12 34  (Response with data 0x1234)
 - `0x36` - Transfer Data
 - `0x37` - Request Transfer Exit
 
-## Safety and Legal
-
-⚠️ **WARNING**: This tool provides direct access to vehicle control modules.
-
-- Only use on vehicles you own or have permission to access
-- Improper use can damage vehicle systems or void warranties
-- Some operations may be restricted by law in your jurisdiction
-- Always follow proper diagnostic procedures
-- Keep vehicle in a safe state during diagnostics
-
 ## Credits
 
 Original software: Ford Motor Company
 Python recreation: Community project
-J2534 interface: Based on SAE J2534 standard
+J2534 interface: Anonymous Automotive Alliance
 
 ## License
 
-This is an educational recreation. Refer to your local laws regarding automotive diagnostic tools.
+This is an unauthorised educational recreation. Ford Motor Company created the original software. 
 
-## Support
-
-For issues, questions, or contributions:
-- Check the Troubleshooting section
-- Review J2534 device documentation
-- Consult Ford diagnostic documentation
-- Ensure all drivers and software are up to date
-
----
-
-**Version**: 7.81.6
 **Compatible Devices**: J2534-compliant Pass-Thru devices
 **Platform**: Windows (Python 3.7+)
